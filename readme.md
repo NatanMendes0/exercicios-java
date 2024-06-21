@@ -1,6 +1,6 @@
-# Olá!
+# Olá, seja bem-vindo(a)!
 
-## Este repositório foi criado com o intuito de praticar exercícios propostos pela plataforma Alura.
+### Este repositório foi criado com o intuito de praticar exercícios propostos pela plataforma Alura.
 
 ### Os exercícios propostos serão apresentados abaixo:
 
