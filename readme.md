@@ -1,4 +1,4 @@
-# Olá, seja bem-vindo(a)!
+# Olá, seja bem-vindo(o)!
 
 ### Este repositório foi criado com o intuito de praticar exercícios propostos pela plataforma Alura.
 
