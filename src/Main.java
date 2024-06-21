@@ -18,7 +18,7 @@ public class Main {
         //keeps the program running
         while (execute){
             System.out.println("""
-                    Menu de música:
+                    Menu de atividades
                     1 - Pessoa
                     2 - Calculadora
                     3 - Musica
@@ -54,11 +54,13 @@ public class Main {
                     boolean musicMenuStart = true;
                     while (musicMenuStart) {
                         System.out.println("""
+                                Menu de música:
                                 1 - Exibir ficha técnica
                                 2 - Avaliar música
                                 3 - Sair do menu
                                 """);
                         int musicOption = scan.nextInt();
+                        scan.nextLine(); // Consume the new line left by nextLine()
                         switch (musicOption){
                             case 1:
                                 music.showsDatasheet();
@@ -77,18 +79,41 @@ public class Main {
                                 break;
                         }
                     }
+                    break;
 
-                //TODO - cases 4 and 5
-                    /*
-                    * case 4 - Crie uma classe Carro com atributos modelo,
-                    * ano, cor e métodos para exibir a ficha técnica
-                    * e calcular a idade do carro.
-                    * case 5 - Crie uma classe Aluno com atributos nome,
-                    * idade, e um método para exibir informações.
-                    * Crie uma instância (como nos exercícios anteriores)
-                    * da classe Aluno, atribua valores aos seus atributos e
-                    * utilize o método para exibir as informações.
-                    */
+                case 4:
+                    Car car = new Car();
+                    System.out.println("O que você deseja fazer?\n");
+                    boolean carMenuStart = true;
+                    while (carMenuStart) {
+                        System.out.println("""
+                                Menu do carro:
+                                1 - Exibir ficha técnica
+                                2 - Calcular idade do carro
+                                3 - Sair do menu
+                                """);
+                        int carOption = scan.nextInt();
+                        switch (carOption) {
+                            case 1:
+                                car.showsDatasheet();
+                                break;
+
+                            case 2:
+                                System.out.println("A idade do carro, baseado no ano atual, é de " + car.ageOfCar(car.yearOfRelease) + " anos!");
+                                break;
+
+                            case 3:
+                                System.out.println("Saindo do menu do carro!");
+                                carMenuStart = false;
+                                break;
+                        }
+                    }
+                    break;
+
+                case 5:
+                    Student student = new Student();
+                    student.showStudentInfo();
+                    break;
 
                 case 6:
                     System.out.println("Programa encerrado!");

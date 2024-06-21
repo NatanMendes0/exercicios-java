@@ -6,7 +6,8 @@ public class Music {
     //criar funções aqui, e o switch case dentro do main
     void showsDatasheet(){
         if(quantityOfRatings > 0) {
-            avarageOfRatings = sumOfRatings / quantityOfRatings;}
+            avarageOfRatings = sumOfRatings / quantityOfRatings;
+        }
         System.out.println(String.format("""
                 Título: %s
                 Artista: %s
